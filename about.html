@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Mantra Events</title>
+</head>
+<body>
+    <div id="main">
+        <nav class="navigation">
+            <a href="" class="logo">
+                <img src="https://www.designhill.com/design-blog/wp-content/uploads/2014/09/Custom-Logo-Design.jpg" alt="">
+            </a>
+            <input type="checkbox" class="menu-btn" id="menu-btn"></input>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+               
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="aimg">About Us</h1>
+        
+        <div id="about">
+           
+            <div class="about-image">
+                <img src="/images/6308.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Mantra Events</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolore perferendis sequi ipsa in nam fuga nihil aspernatur laboriosam commodi, explicabo pariatur dicta nulla! Exercitationem sunt ipsum ut atque veritatis.</p>
+             <a href="www.instagram.com">   <button>Get More Info</button></a>
+            </div>
+        </div>
+        <div class="ccc">
+              
+        </div>
+    <div id="contact">
+        <h3>Send me mail</h3>
+        <div class="contact-input">
+            <input type="email" placeholder="exmaple@gmail.com"></input>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".navigation").css("background" , "blue");
+	  }
+
+	  else{
+		  $(".navigation").css("background" , "#333");  	
+	  }
+  })
+})
+</script>
+</html>
